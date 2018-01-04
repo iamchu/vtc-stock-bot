@@ -4,15 +4,6 @@ import bs4
 import sqlite3 as lite
 import sys
 
-def scrapeStockQuotations():
-	pass
-
-def saveDataIntoDatabase():
-	pass
-
-def handleLogicalRequests():
-	pass
-
 # grab BOVESPA company codes
 def returnCompanyCodesAsList():
 	url = 'https://cotacoes.economia.uol.com.br/acoes-bovespa.html?exchangeCode=.BVSP&page=1&size=3000'
@@ -57,8 +48,8 @@ def insertStockDataIntoTable(data, cotacao, minima, maxima, variacao, variacao_p
 	pass
 
 # populate db with data from url passed as argument
-def scrapeCompanyQuotations(url_suffix):
-	url = 'https://cotacoes.economia.uol.com.br/acao/cotacoes-historicas.html?codigo=' + url_suffix + '&beginDay=1&beginMonth=1&beginYear=2004&endDay=1&endMonth=1&endYear=2018&page=1&size=10000'
+def scrapeCompanyQuotationsAndReturnAsListOfLists(company_code):
+	url = 'https://cotacoes.economia.uol.com.br/acao/cotacoes-historicas.html?codigo=' + company_code + '&beginDay=1&beginMonth=1&beginYear=2004&endDay=1&endMonth=1&endYear=2018&page=1&size=10000'
 
 	page = requests.get(url)
 	page.raise_for_status()
@@ -69,13 +60,17 @@ def scrapeCompanyQuotations(url_suffix):
 
 	lines = soup.find_all("tr")
 
-	for line in lines:
-		print line
-		print "-------"*20
+	for i in range(len(lines)):
+		line_soup = bs4.BeautifulSoup(str(lines[i]), "lxml")
+
+		line_values = line_soup.find_all("td")
+		print len(line_values)
+		for j in range(len(line_values)):
+			print line_values[0].get_text() + " " + line_values[1].get_text()
 
 
 def main():
 	list_of_company_codes = returnCompanyCodesAsList()
-	scrapeCompanyQuotations("ITUB4.SA")
+	scrapeCompanyQuotationsAndReturnAsListOfLists("ITUB4.SA")
 
 main()
