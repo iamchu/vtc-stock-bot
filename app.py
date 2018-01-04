@@ -41,15 +41,13 @@ def createTable(db, table_name):
 		con.close()
 
 # argument is one list with the 7 values we need for the company data
-def insertIntoTable(db,list_with_data, table_name):
-	con = lite.connect(db)
+def insertIntoTable(connection_to_db,list_with_data, table_name):
+	# con = lite.connect(db)
 	table_name = table_name.replace(".", "_")
-	with con: 
-		cur = con.cursor()
+	with connection_to_db: 
+		cur = connection_to_db.cursor()
 		sqlite_command_insert = "INSERT INTO " + table_name + " VALUES(" + list_with_data[0]+","+list_with_data[1] + "," + list_with_data[2] + "," + list_with_data[3] + "," + list_with_data[4] + "," + list_with_data[5] + "," + list_with_data[6] +")"
 		cur.execute(sqlite_command_insert)
-	if con:
-		con.close()
 
 # def insertStockDataIntoTable(data, cotacao, minima, maxima, variacao, variacao_porcentagem, volume, table):
 	# pass
@@ -108,9 +106,11 @@ def main():
 		createTable('stock_data.db', company)
 		data = scrapeCompanyQuotationsAndReturnAsListOfLists(company)
 		for line in data:
-			print "Inserting " + str(line) + " into table " + company
-			insertIntoTable('stock_data.db',line, company)
+			# print "Inserting " + str(line) + " into table " + company
+			con = lite.connect('stock_data.db')
+			insertIntoTable(con,line, company)
 			total_entries+=1
+			print total_entries
 		print "Total entries: " + total_entries
 		print "Sucessfully created and inserted data into table " + company
 
@@ -121,3 +121,5 @@ main()
 # 1) save the data from the tables to a table in the correct database.
 
 # TA DANDO ERRO DO 12 VALUES WERE SUPPLIED POR CAUSA DAS BARRAS E DOS PONTOS NOS NUMEROS INSERIDOS! A TABELA PRECISA DE , PRA FLOAT E ACHO Q BARRAS TALVES SEJAM PROBLEMATICAS (?)
+# PODE ESTAR MUITO DEVAGAR PORQUE ESTOU FECHANDO E ABRINDO A CONEXAO TODA VEZ!!!
+# MAYBE ITS BETTER TO DO BULK INSERTS (MAYBE FASTER????)
