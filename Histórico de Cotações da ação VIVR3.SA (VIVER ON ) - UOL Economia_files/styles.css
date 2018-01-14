@@ -1,0 +1,845 @@
+/* geraTabelas */
+@import url(http://economia.uol.com.br/geratabelas.css);
+/* links patrocinados */
+@import url(http://adclient-uol.lp.uol.com.br/stc/adclient.css);
+#links-patrocinados-insercao { width:95%; padding: 1em 1em 1em; position:relative;}
+#links-patrocinados-coluna-int { padding-bottom:5px;width:21.8em;}
+/* links patrocinados */
+#links-patrocinados { background:#f5f5f5;margin-bottom:1em;overflow:hidden; }
+#tag-home #links-patrocinados {width: 594px;}
+
+/** Estilo do chapéu */
+#links-patrocinados { position:relative; padding-bottom:2.5em; overflow:hidden; }
+#links-patrocinados h3 { clear: both; background-color: white; padding: 5px 0; margin: 0; text-align: center; font: bold 10px verdana; color: white;height:10px;border-bottom:0.1em solid #ccc; color: #000; }
+#links-patrocinados h3 a { color: #000;float:left;margin-left:1em; }
+#links-patrocinados h3.chapeu-calhau { border-top: solid 0.1em #ccc; text-align: left; padding-left: 1em; }
+#links-patrocinados ul, #links-patrocinados ul li { padding: 0; margin: 0; }
+#links-patrocinados ul li { list-style-type: none; padding: 5px;width:276px;float:left;margin-left:4px;min-height:50px;_height:50px; }
+#links-patrocinados ul li strong { font: bold 10px verdana;color:#0c78c0; }
+#links-patrocinados ul li em { font: normal 10px verdana; }
+#links-patrocinados ul li span { font: normal 10px arial; color: green; }
+#links-patrocinados h4.lp-anuncie-aqui { position:absolute; bottom:0; left:0; width:100%; border-top:0.1em solid #ccc; padding:0.4em 1em; background:#fff;font:normal 1em verdana; }
+#links-patrocinados h4.lp-anuncie-aqui a { color:#000; }
+
+body { background:#fff;font-size:1.25ex;font-family:verdana,arial,sans-serif;margin:5px 0 5px 8px;color:#000;}
+html>body { background:#fff;font: 10px verdana,arial,sans-serif;margin:5px 10px;color:#000;padding:0; }
+
+a { text-decoration:none;color:black;}
+a:hover { text-decoration:underline;}
+a:visited { color:black; }
+h1,h2,h3,h4,h5,p { margin:0;padding:0; }
+h1 { font-size:1.8em; }
+h2 { font-size:1.6em; }
+h5 { font-size:1em; }
+img { border:none; }
+form { display:inline; }
+
+#corpo {width:76em;position:relative;height:100%;margin-bottom:2px;border-top:0.1em solid #fff;min-height:300px;}
+#col-esquerda {width:15.2em;background:#003945 url('http://ec.i.uol.com.br/col-esquerda-bg.gif') repeat 0 0;position:absolute;top:0em;}
+#col-esquerda .conteudo { height:100%; background:transparent url('http://ec.i.uol.com.br/menu-bg.gif') no-repeat 0 0; }
+/*#col-centro {width:46.6em;margin-left:15.2em;position:relative;}*/
+#col-centro { position:relative; width:36.1em; margin:1em 0 0 16.2em; padding:0;z-index:2; }
+#col-centro-full {width:60.8em;margin-left:15.2em;margin-top:1em;position:relative;}
+/*#col-direita {width:14.2em;background-color:#e1e1e1;position:absolute;left:61.8em;top:0em;overflow:hidden;}*/
+#col-direita { position:absolute; top:0em; left:53.2em; width:22.8em; margin-top:1em; background:transparent; overflow:hidden; }
+#col-extra {position:absolute;top:0.5em;left:78em;}
+#copyright {margin:0.5em 0;}
+
+#barra-estacao { width:76em;height:5em;background:#05090A url('http://ec.i.uol.com.br/barra-estacao-bg.gif') no-repeat 0 0;border-top:1px solid white;position:relative; }
+#logo-imagem { height:5em;width:15.2em;border:0;}
+#logo-texto { height:5em;width:10.5em;border:0;}
+.ok-button {  vertical-align:bottom;margin-left:5px;border:0; width:24px;height:19px; background:url(http://img.uol.com.br/ok-button.gif) gray; }
+
+/* envie sua duvida */
+body div#FullOpacityPopUpPergunta {display:none;position:absolute;top:50%;left:50%;z-index:1001;}
+body div#FullOpacityPopUpPergunta .errosconteudo {background:white; padding:10px}
+body div#FullOpacityPopUpPergunta .errosconteudo #errostop { width:450px; background:url(http://n.i.uol.com.br/erros/linha.gif) no-repeat bottom; padding-left:3px }
+body div#FullOpacityPopUpPergunta .errosconteudo #errostop .errosfechar { background:transparent;display:inline; padding:5px 0 5px 263px; _padding:5px 0 5px 268px; margin-bottom:10px; text-align:right}
+body div#FullOpacityPopUpPergunta .errosconteudo #errostop .errosfechar img { padding:0 0 3px 3px; *padding:0 0 0 3px; _margin-left:3px; *margin-top:3px; border:0}
+body div#FullOpacityPopUpPergunta .errosconteudo #errostop .errosfechar a {font:bold 10px arial; color:#000; text-decoration:none}
+body div#FullOpacityPopUpPergunta .errosconteudo #errostop .errostit {background:transparent url('http://img.uol.com.br/ico_enviaremail.gif') no-repeat 3px;display:inline; padding:5px 0 5px 23px; margin-bottom:10px; font:bold 13px arial; color:#2AA1B5; }
+body div#FullOpacityPopUpPergunta .errosconteudo #errostop .errostit img {display:none;}
+/* comunique erro */
+body div#FullOpacityPopUpErro {display:none;position:absolute;top:50%;left:50%;z-index:1001;}
+body div#FullOpacityPopUpErro .errosconteudo {background:white; padding:10px}
+body div#FullOpacityPopUpErro .errosconteudo #errostop { width:450px; background:url(http://n.i.uol.com.br/erros/linha.gif) no-repeat bottom; padding-left:3px }
+body div#FullOpacityPopUpErro .errosconteudo #errostop .errosfechar { background:transparent;display:inline; padding:5px 0 5px 263px; _padding:5px 0 5px 268px; margin-bottom:10px; text-align:right}
+body div#FullOpacityPopUpErro .errosconteudo #errostop .errosfechar img { padding:0 0 3px 3px; *padding:0 0 0 3px; _margin-left:3px; *margin-top:3px; border:0}
+body div#FullOpacityPopUpErro .errosconteudo #errostop .errosfechar a {font:bold 10px arial; color:#000; text-decoration:none}
+body div#FullOpacityPopUpErro .errosconteudo #errostop .errostit {background:transparent;display:inline; padding:5px 0; margin-bottom:10px; font:bold 13px arial; color:#2AA1B5; }
+body div#FullOpacityPopUpErro .errosconteudo #errostop .errostit img {*margin-top:3px; margin-right:3px }
+body #erros {background: #fff; font: x-small arial, verdana, sans-serif; color:#000; width:460px; height:360px; position:relative}
+body #erros #errosformulario {margin-top:15px;}
+body #erros #errosformulario {width:440px;font:13px arial; margin:10px;}
+body #erros #errosformulario .input {width:230px; margin-bottom:5px; border:none; background:#DFDCD5}
+body #erros .bot-envia {text-transform:uppercase;background:#2AA1B5; border-top:1px solid #AEDDE5; border-right:1px solid #04252A; border-bottom:1px solid #04252A; border-left:1px solid #AEDDE5;font-family:arial;font-size:10px;width:55px;height:19px;color:white; margin-top:5px;}
+body #erros .v10nb {font:10px verdana}
+body #erros .a18bb {font:bold 18px arial}
+body #iframePerguntas {border:0; position:absolute; top:25px; left:0; width:460px; height:345px; margin:10px; display:none}
+
+/* variacao */
+.variacao.baixa { color:#C00; padding-left:1em !important; background:url('http://ec.i.uol.com.br/variacao-baixa.gif') no-repeat 0 center; }
+.variacao.baixa a { color:#C00; }
+.variacao.alta { color:#339900; padding-left:1em !important; background:url('http://ec.i.uol.com.br/variacao-alta.gif') no-repeat 0 center; }
+.variacao.alta a { color:#339900; }
+.variacao.estavel { color:#999; padding-left:1em !important; background:url('http://ec.i.uol.com.br/variacao-estavel.gif') no-repeat 0 center; }
+.variacao.estavel a { color:#999; }
+
+.borda { position:relative; }
+.borda .top-left { position:absolute;top:-0.1em;_top:0;left:-0.1em;background:url(http://ec.i.uol.com.br/top-left.gif) left top no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.borda .top-right { position:absolute;top:-0.1em;_top:0;right:-0.1em;_right:0;background:url(http://ec.i.uol.com.br/top-right.gif) right top no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.borda .bottom-left { position:absolute;bottom:-0.1em;left:-0.1em;background:url(http://ec.i.uol.com.br/bottom-left.gif) left bottom no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.borda .bottom-right { position:absolute;bottom:-0.1em;right:-0.1em;_right:0;background:url(http://ec.i.uol.com.br/bottom-right.gif) right bottom no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+
+.borda-discreta .borda .top-left { top:0;left:0; }
+.borda-discreta .borda .top-right { top:0;right:0; }
+.borda-discreta .borda .bottom-left { bottom:0;left:0; }
+.borda-discreta .borda .bottom-right { bottom:0;right:0; }
+
+.col-1-direita .borda { position:relative; }
+.col-1-direita .borda .top-left { position:absolute;top:0em;left:0em;background:url(http://ec.i.uol.com.br/top-left-i.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.col-1-direita .borda .top-right { position:absolute;top:0em;right:0em;background:url(http://ec.i.uol.com.br/top-right-i.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.col-1-direita .borda .bottom-left { position:absolute;bottom:0em;left:0em;_bottom:-0.8em;background:url(http://ec.i.uol.com.br/bottom-left-i.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.col-1-direita .borda .bottom-right { position:absolute;bottom:0em;right:0em;_bottom:-0.8em;background:url(http://ec.i.uol.com.br/bottom-right-i.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+
+#busca {position:absolute;right:0em;top:0em;padding:0.4em 0.4em 0em 0em;width:35em;}
+#busca a {font-family:verdana;font-size:1em;color:#fff}
+#busca a.lupa{display:block;padding:0.3em 0em 0.4em 1.5em;background:url('http://img.uol.com.br/ico_buscab.gif') 0em 0.4em no-repeat;}
+#busca #abas{position:absolute;right:0.4em;top:0.1em;z-index:2;height:2em;padding-top:0.3em;}
+#busca #abas a{font-family:arial;color:#fff;padding:0.1em 0.6em;background-color:transparent;margin:0.1em 0.1em 0 0.1em;}
+#busca #abas a.sel, #busca #abas a:hover{margin:0;padding-bottom:0.3em;color:#fff;background-color:#003945;border-top:0.1em solid #044A59;border-left:0.1em solid #044A59;border-right:0.1em solid #044A59;}
+#busca #abas span{margin-top:0.4em;font-family:verdana;font-size:1.2em;color:#003945;}
+#busca #form1 {position:absolute;right:0.4em;top:2.1em;border:0.1em solid #044A59;width:35em;z-index:1;background-color:#003945;height:2.3em}
+#busca #form1 .texto {position:absolute;left:0.3em;top:0.3em;z-index:3;font-family:arial;font-size:1em;padding:0em;margin:0;height:1.3em;width:27.5em;}
+#busca #form1 .botao {position:absolute;right:0.4em;top:0.3em;z-index:3;font-family:arial;font-size:1em;color:#fff;border-top:solid 0.1em #AEDDE5;border-right:solid 0.1em #04252A;border-bottom:solid 0.1em #04252A;border-left:solid 0.1em #AEDDE5;background-color:#2AA1B5;height:1.7em;width:6em;}
+
+#banner-728x90-area { width:760px;height:100px;background-image:url(http://img.uol.com.br/pub_v_90.gif); background-repeat:no-repeat; background-position: 740px 0;position:relative; }
+#banner-728x90 { position:absolute; left:20px; }
+
+#banner-180x150-area { float:right;border-left:1em solid white; border-bottom:0.5em solid white;padding:0;z-index:10; }
+#banner-180x150 { position:absolute;left:41em;top:22em;z-index:11;display:none; }
+.materia #banner-180x150 #pub-materia { padding:0.4em 0 0;margin:0 1em; background:transparent url('http://img.uol.com.br/pub_h_120.gif') no-repeat 1.5em 0; }
+.materia #banner-180x150 #pub-materia #pub-materia { background:transparent }
+/* .materia #banner-180x150 #pub-materia { padding:1em 1.5em; background:transparent url('http://img.uol.com.br/pub_h_120.gif') no-repeat 1.5em 0; } */
+
+#banner-468x60-area { width:760px;height:70px;position:relative; }
+#banner-468x60 { position:absolute; left:95px; }
+#banner-120x60-area { width:760px;height:70px;background-image:url(http://img.uol.com.br/pub_v_90.gif); background-repeat:no-repeat; background-position: 682px -30px; }
+#banner-120x60 { position:absolute; left:570px; }
+#banner-125x125-area { width:125px;height:145px; border:0 !important; margin:1em 0 0 1.4em;background-image:url(http://img.uol.com.br/pub_h_120_s.gif); background-repeat:no-repeat; background-position: 0.1em 0.1em; }
+#banner-125x125 { position:absolute;left:2.3em;margin-top:1em;  }
+#banner-125x125-area-2 { width:125px;height:145px; border:0 !important; margin:0 0 0 1.1em; }
+#banner-125x125-2 { position:absolute;left:2.3em;top:92.5em}
+#banner-218x174-area { width:218px;height:174px; border:0; margin:0 0 1em 0;/*background-image:url(http://img.uol.com.br/pub_h_120_s.gif); background-repeat:no-repeat; background-position: 0.5em 0.1em;*/ }
+#banner-218x174 { position:absolute;left:78em; }
+#banner-120x600-area { width:120px;height:625px;background-image:url(http://img.uol.com.br/pub_h_120.gif); background-repeat:no-repeat; background-position: 1.2em 10px;}
+#banner-120x600 { position:absolute; left:64em; }
+#banner-120x35-area { width:120px;height:42px;margin:10px 1.1em; }
+#banner-120x35 { position:absolute; left:63.9em; }
+#tag-home #banner-120x35-home { left:60em; }
+#banner-120x35-img { width:100px;height:7px;background-image:url(http://img.uol.com.br/patrocinador_p.gif); background-repeat:no-repeat;font-size:6px;  }
+#chamada-shopping { width:12.5em;position:absolute;top:88.7em;left:1.3em; }
+
+#tag-home #patrocinio { background-color: #fff; border: solid 1em #EAE9E3; padding: 0.5em 0; text-align: center; }
+#tag-home #banner-120x35-home { position: absolute; }
+#tag-home #banner-120x35 { left: 59.8em !important; }
+#tag-home #banner-120x35-area { margin: 0.3em 0 0 0; }
+
+/* shop-chamadas */
+#shop-chamadas {left:0em;top:0.5em;width:21.8em;display:none;background-color:#E8E8E8;width:21.8em;margin-bottom:1em;}
+#shop-chamadas h3 {background-color:#50728E;font-size:10px;}
+#shop-chamadas h3 a {color:white;padding:4px;text-align:center;border:0;font:bold 1em verdana;}
+#shop-chamadas strong {color:#50728E;display:block;font:bold 1.3em arial;}
+#shop-chamadas a {padding:6px 3px 14px 6px;display:block;font:normal 1em arial}
+#shop-chamadas img {float:left;margin-right:3px;border:0;}
+#shop-chamadas .c {background:#F3F3F3;border-bottom:1px solid white;border-top:1px solid white;}
+#shop-chamadas .box1 {border:1px solid #ccc;}
+
+/*shopping chamada simples */
+#shop-chamada-simples { background-color:#f3f3f3;border:1px solid #ccc;border-bottom:0;height:7.5em; }
+#shop-chamada-simples h4 { padding:0.3em 0;text-align:center;background-color:#50728E;font:bold 1em verdana;color:#fff;border-bottom:solid 0.1em #CDCCCA;margin:0; }
+#shop-chamada-simples h4 a { color:#fff; }
+#shop-chamada-simples .box1 a { display:block;padding:0.3em 0.5em 0 0.5em;font:normal 1em arial; }
+#shop-chamada-simples .box1 em { display:block;color:#496881;font:bold 1em verdana;margin-top:0.3em; }
+#shop-chamada-simples .box1 img { height:4.9em;width:4.9em;margin-right:0.3em;border:0;float:left; }
+
+/* menu - layout */
+#menu ul li, #menu ul ul, #menu ul { margin:0;padding:0;list-style-type:none; }
+#menu ul li a { background-color:#2AA1B5;color:white;border-bottom:1px solid #fff;text-decoration:none;font-weight:bold;width:15.2em;w\idth:14em;display:block;padding:0.4em 0.2em 0.4em 1em; } /* item */
+#menu ul li a:hover { background-color:#5EBAC9; } /* item hover */
+#menu ul li #menu-crise-financeira { background-color:#73a566; }
+#menu ul li #menu-crise-financeira:hover { background-color:#7eb770; }
+#menu ul ul li a { border-bottom:0.1em solid #DFDCD5;background-color:#FFF;color:black;font-weight:normal; } /* subitem */
+#menu ul ul li a:hover { background-color:#f0f0eb; } /* subitem hover */
+#menu ul ul { display:none;background-color:#EAEAEA; }
+#menu #menu-especial { margin-bottom:1.5em; }
+#menu #menu-primario { border-top:0.1em solid #FFF; }
+#menu #menu-secundario { margin-top:1.5em; border-top:0.1em solid #FFF; }
+/* menu - sub-menu */
+#tag-cotacoes #sub-cotacoes,
+#tag-finpes #sub-financaspessoais,
+#tag-ir #sub-impostoderenda,
+#tag-negocios #sub-negocios,
+#tag-planodecarreira #sub-planodecarreira,
+#tag-ultimasnoticias #sub-ultimasnoticias,
+#tag-ir #sub-ir,
+#tag-agenda #sub-agenda,
+#tag-calculadoras #sub-calculadoras,
+#tag-duvidas #sub-duvidas,
+#tag-glossario #sub-glossario,
+#tag-grupos #sub-grupos,
+#tag-ultimasnoticias #sub-ultimasnoticias { display:block; }
+/* menu - cor do item ativo */
+#tag-crise-economica #menu #menu-crise-financeira,
+#tag-cotacoes #menu-cotacoes,
+#tag-finpes #menu-financaspessoais,
+#tag-ir #menu-impostoderenda,
+#tag-negocios #menu-negocios,
+#tag-planodecarreira #menu-planodecarreira,
+#tag-ultimasnoticias #menu-ultimasnoticias,
+#tag-agenda #menu-agenda,
+#tag-guias #menu-guias,
+#tag-calculadoras #menu-calculadoras,
+#tag-duvidas #menu-duvidas,
+#tag-glossario #menu-glossario,
+#tag-grupos #menu-grupos,
+#tag-videos #menu-videos,
+#tag-perfilinvestidor #menu-perfilinvestidor,
+#tag-widgets #menu-widgets,
+#tag-ultimasnoticias #menu-ultimasnoticias { background-color:#EAA540; }
+/* menu - cor do subitem ativo */
+.tag-carros #finpes-carros, 
+.tag-condominio #finpes-condominio, 
+.tag-consumidor #finpes-consumidor, 
+.tag-dividas #finpes-dividas, 
+.tag-familia #finpes-familia,
+.tag-saude #finpes-saude,  
+.tag-financiamentos #finpes-financiamentos, 
+.tag-imoveis #finpes-imoveis, 
+.tag-investimentos #finpes-investimentos, 
+.tag-previdencia #finpes-previdencia, 
+.tag-outrasdespesas #finpes-outras,
+.tag-bolsas #cotacoes-bolsas,
+.tag-cambio #cotacoes-cambio,
+.tag-indices #cotacoes-indices,
+.tag-cotacoes #cotacoes-ulnot,
+.tag-cotacoes.capa #cotacoes-noticias,
+.tag-cotacoes.materia #cotacoes-noticias,
+.tag-finpes.capa #finpes-noticias,
+.tag-finpes.materia #finpes-noticias,
+.tag-ir.capa #ir-noticias,
+.tag-ir.materia #ir-noticias,
+.tag-negocios.capa #negocios-noticias,
+.tag-negocios.materia #negocios-noticias,
+.tag-planodecarreira.capa #plano-noticias,
+.tag-planodecarreira.materia #plano-noticias,
+.tag-planodecarreira.tag-artigo #plano-polito,
+.tag-planodecarreira.tag-artigos #plano-polito { background-color: #f0f0eb; }
+
+/* sites relacionados */
+#sites { width:12.6em; margin:1em 0.8em; padding:1em 0 1em 1em; background:#000; opacity: 0.6; filter: alpha(opacity=60); }
+#sites h2 { margin:0 0 1em 0; font:normal 1em arial !important; color:#2AA1B5; text-transform:uppercase; }
+#sites ul, #sites li { opacity: 2; margin:0; padding:0; list-style:none; }
+#sites li { font:normal 1em arial; color:#FFF; }
+#sites li a { color:#FFF; }
+
+/* receba noticias */
+#receba-noticias { width:12.6em; margin:1em 0.8em; padding:1em 0 1em 1em; background:#000; opacity: 0.6; filter: alpha(opacity=60); }
+#receba-noticias h2 { margin:0 0 1em 0; font:normal 1em arial !important; color:#2AA1B5; text-transform:uppercase; }
+#receba-noticias ul, #receba-noticias li { opacity: 2; margin:0; padding:0; list-style:none; }
+#receba-noticias li { font:normal 1em arial; color:#FFF; }
+#receba-noticias li a { color:#fff; }
+
+
+/* fale com */
+#falecom { margin-left:1em; }
+#falecom a { display:block; padding-left:17px; margin:1.3em 0.4em; background:url(http://img.uol.com.br/ico_faleconosco.gif) no-repeat left;font-family:arial;color:white;}
+
+/* home - a partir daqui, css específico para a home /////////////////////////////////// */
+#chamadas { float:left; position:relative; top:0; left:0; width:100%; padding:0; overflow:hidden;}
+
+#chamada1 h2 { font:normal 1em arial; text-transform:uppercase; color:#2AA1B5; }
+#chamada1 h2 a { color:#2AA1B5; }
+#chamada1 h1 { font:bold 2em arial; }
+#chamada1 p { font:normal 1.3em arial; }
+#modulo1 .chamada h3 { /*margin:0 0 0 7.8em;*/ padding:0 0 0 1.3em; font:bold 1.1em arial; background:transparent url('http://ec.i.uol.com.br/chamada-h3-bg.gif') no-repeat 0 0.3em; }
+#modulo1 .chamada h3 a { color: #333333; }
+
+/* alteracoes no MODULO 5 da home */
+#modulo5 .canto { display:none; }
+#modulo5 .borda { background:transparent; border:none; padding:0; }
+#modulo5 h2 { margin-left:0; }
+#modulo5 h3 { margin-left:0;font:bold 1.6em arial; }
+#modulo5 p.link { padding-left:0; }
+
+.modulo { clear:both; width:100%; height:auto; _height:1em; margin:0; border-top:0.8em solid #FFF; padding:1em 0 0 0; background:transparent url('http://ec.i.uol.com.br/bloco-bg.gif') repeat-x 0 0; overflow:visible; }
+.modulo .destaque .imagem { width:6.6em; height:6.6em; margin:0 1em 0.5em 0; float:left; }
+.modulo .destaque .imagem img { width:6.6em; height:6.6em; }
+.modulo .destaque h2 { font:normal 1em arial; text-transform:uppercase; color:#2AA1B5; }
+.modulo .destaque h2 a { color:#2AA1B5; }
+.modulo .destaque h3 { font:bold 1.6em arial;  }
+.modulo .chamada h3 { /*margin:0 0 0 7.8em;*/ padding:0 0 0 1.3em; font:bold 1.1em arial; background:transparent url('http://ec.i.uol.com.br/chamada-h3-bg.gif') no-repeat 0 0.3em; }
+.modulo .chamada h3 a { color: #333333; }
+.modulo .duplo { float:left; width:49%; }
+.modulo .duplo h2 { margin:0; padding:0; font:normal 1em arial; text-transform:uppercase; color:#2AA1B5; }
+.modulo .duplo h2 a { color:#2AA1B5; }
+.modulo .duplo h3 { margin:0; padding:0; font:bold 1.2em arial; }
+
+.modulo .box { float:left; width:47.9%; }
+.modulo .box-esquerda { margin-right:1.5em; }
+.modulo .box h2 { padding:0.4em 1em; background:#E8A84F; font:normal 1em arial; color:#FFF; text-transform:uppercase; }
+.modulo .box p { margin:0.1em 0 0 0; border:0.1em solid #DCDBD9; padding:0.4em 0.8em; font:bold 1.2em arial; }
+.modulo .box ul, .modulo .box li { margin:0; padding:0; list-style:none; }
+.modulo .box ul { border-right:0.1em solid #DEDCD4; border-bottom:0.1em solid #DEDCD4; border-left:0.1em solid #DEDCD4; padding:1em 1em 0 1em; }
+.modulo .box li { margin:0 0 1em 0; padding:0 0 0 1.3em; font:normal 1.2em arial; background:transparent url('http://ec.i.uol.com.br/chamada-h3-bg.gif') no-repeat 0 0.4em; }
+
+.modulo .borda { height:100%; padding:1em 0; background:#D8E5E7; } 
+.modulo .borda h2 { margin-left:1em; font:normal 1em arial; text-transform:uppercase; color:#2AA1B5; }
+.modulo .borda h2 a { color:#2AA1B5; }
+.modulo .borda h3 { margin:0 0.8em 0.5em 0.8em; font:bold 1.3em arial; }
+.modulo .borda .link { padding:0.2em 1em; }
+
+.modulo.chanfrado.tvuol .div1 { min-height:12.4em; }
+.modulo.chanfrado.tvuol h3 { margin:0; font:normal 1.3em arial; }
+.modulo.chanfrado.tvuol .imagem { float:left; width:13.2em; height:10.4em; margin:0 1em 0 0; }
+.modulo.chanfrado.tvuol .imagem img { width:13.2em; height:8.5em; }
+.modulo.chanfrado.tvuol .imagem a { display:block; width:13.2em; height:10.4em; background:transparent url('http://ec.i.uol.com.br/tvuol-imagem-bg.gif') no-repeat 0 bottom; }
+.modulo.chanfrado.tvuol .mais { margin:1em 0 0 0; font:normal 1em arial; text-transform:uppercase; }
+
+.modulo.unica h2 { font:normal 1em arial; text-transform:uppercase; color:#2AA1B5; }
+.modulo.unica h2 a { color:#2AA1B5; }
+.modulo.unica h3 { font:bold 1.3em arial;  }
+
+.modulo .borda { background-color:#D7E5E6; border:0.1em solid #D7E5E6; }
+
+#blocos { float:right; width:15em; border-right:1em solid #FFF; padding:1em 0 0 0; font-size:1em; overflow:hidden; }
+
+.bloco { margin:0 0 1em 0; width:99%; overflow:hidden; }
+.bloco .conteudo { background-color:#DEDCD4; }
+.bloco h3 { position:relative; margin:0; text-indent:-999em; font-size:1em;height:2.5em;z-index:1; }
+.bloco h3 cite { position:absolute; bottom:0; right:1em; display:block; text-indent:0; font:normal 1em arial; color:#666; text-align:right; }
+.bloco .grafico { margin:1em 1em 0 1em; }
+.bloco .indicador { margin:1em; padding:0 0.8em; height:1.6em; background:#FFF; font:normal 1em arial; }
+.bloco .indicador span { padding:0.2em 0; }
+.bloco .indicador .pontos { float:left; }
+.bloco .indicador .variacao { float:right; }
+.bloco .chamada { padding:1em 0.8em }
+.bloco .mais { margin:0; padding:0.3em 0 0.3em 0.5em; border-top:0.1em solid #DFDCD5; background:#DFDCD5; font:normal 1em arial; text-transform:uppercase; overflow:hidden; }
+.bloco .mais a { display:block; height:1.3em; padding-left:1em; background:transparent url('http://ec.i.uol.com.br/chamada-h3-bg.gif') no-repeat 0 0.3em; }
+.bloco .button { font:normal 1em verdana; color:#FFF; text-transform:uppercase; background:#2AA1B5; border-top:0.1em solid #AEDDE5; border-right:0.1em solid #04252A; border-bottom:0.1em solid #04252A; border-left:0.1em solid #AEDDE5; }
+.bloco .dolar { margin-left:1em;margin-top:1em; }
+.bloco .dolar th { background:#dfdcd5;width:5.8em;_width:6.3em;height:1.8em;_height:1.6em;font-weight:normal;text-align:left;padding-left:0.5em; }
+.bloco .dolar td { background:#ffffff;width:6.6em;border:0.1em solid #dfdcd5;font:normal 1em arial;text-align:center; }
+.bloco .bolsa { margin-left:1em;margin-top:1em; }
+.bloco .bolsa td { background:#ffffff;width:9.8em;height:1.8em;_height:1.6em;border:0.1em solid #dfdcd5;font:normal 1em arial;text-align:center; }
+.bloco p { position:relative; font:normal 1em arial;color:#666;margin:0.5em 1em; }
+.bloco p cite { position:absolute; bottom:0; right:0; font:normal 1em arial;margin-left:6em; }
+
+#bovespa .conteudo, #dolar .conteudo { border:0.1em solid #DFDCD5; background:#EAE9E3; }
+#bovespa .mais, #dolar .mais { background:#DFDCD5; }
+#bovespa h3 { text-indent:0; }
+#bovespa h3 a { display:block; width:7em; height:2.5em; background:transparent url('http://ec.i.uol.com.br/bovespa-h3-bg.gif') no-repeat 1em 1em; z-index:10; }
+#bovespa h3 span { display:none; }
+#dolar h3 { text-indent:0; }
+#dolar h3 a { display:block; width:6em; height:2.5em; background:transparent url('http://ec.i.uol.com.br/dolar-h3-bg.gif') no-repeat 1em 0.7em; z-index:10; }
+#dolar h3 span { display:none; }
+#sophia { background:#DFDCD5; }
+#sophia .conteudo { border:0.1em solid white; }
+#sophia h3 { height:auto; margin:0; padding:0; }
+#sophia h3 a { display:block; margin:0.3em 0; padding:0; background:transparent url('http://ec.i.uol.com.br/sophia-h3-bg.gif') no-repeat 0 0; }
+#sophia h3 cite { position:relative; top:0; margin:0.8em 1em 0 1.8em; font:normal 1em arial; text-align:left; }
+#sophia ul, #sophia li { margin:0; padding:0; list-style:none; }
+#sophia ul { margin:0.7em 0 0 0; padding:1em 1em 0.1em 1em; background:#EAE9E3; }
+#sophia li { margin:0 0 1em 0; font:bold 1em verdana; }
+#sophia li a { display:block; }
+#sophia li strong { display:block; font:normal 1em arial; color:#2AA1B5; text-transform:uppercase; }
+#sophia form p { text-align:center; }
+#sophia select { width:90%; margin:0.8em 0; font:normal 1em arial; }
+#folha-invest .conteudo { background-color:#FFF; border:0.1em solid #DFDCD5; }
+#folha-invest p { font:normal 1.2em arial; text-align:center; }
+#folha-invest h3 { height:3.7em; background:transparent url('http://ec.i.uol.com.br/folha-invest-h3-bg.gif') no-repeat center 0.7em; }
+#folha-invest h3 cite { display:none; }
+#folha-invest .chamada { padding:0.8em 0; }
+
+#fundos.bloco .conteudo { background-color:#FFF; border:0.1em solid #DFDCD5; }
+#fundos.bloco h3 { margin:0; height:3.5em; background:#DFDCD5 url(http://ec.i.uol.com.br/fundos-h3-bg.gif) no-repeat 0 0; }
+#fundos.bloco form p { position:relative; height:2em; }
+#fundos.bloco label { position:absolute; top:0; right:15.5em; display:block; width:4em; font:normal 1em arial; text-align:right; text-transform:uppercase; }
+#fundos.bloco .text { position:absolute; top:0; left:4.8em; width:14em; margin-left:0.6em; font:normal 1em arial; }
+#fundos.bloco .button { position:absolute; top:0; left:5.5em;  }
+#fundos.bloco select { position:absolute; top:0; left:5.5em; width:15em; font:normal 1em arial; }
+#fundos ul,
+#fundos li { margin:0; padding:0; list-style:none; }
+#fundos ul { margin:0.8em 1em; }
+#fundos li { _height:1em; margin:0.5em 0; padding-left:1em; font:bold 1em verdana; background:transparent url('http://ec.i.uol.com.br/chamada-h3-bg.gif') no-repeat 0 0.3em; overflow:visible; }
+
+#investidor.bloco .conteudo { background-color:#FFF; border:0.1em solid #DFDCD5; }
+#investidor.bloco h3 { margin:1em; height:20px; background: url(http://ec.i.uol.com.br/teste.gif) no-repeat; background-position-x:10px; background-position-y:8px; }
+#investidor.bloco a { font-weight:normal; font-size:13px; font-family:Arial, Helvetica, sans-serif; }
+#investidor.bloco form p { position:relative; height:2em; }
+#investidor.bloco label { position:absolute; top:0; right:15.5em; display:block; width:4em; font:normal 1em arial; text-align:right; text-transform:uppercase; }
+#investidor.bloco .text { position:absolute; top:0; left:4.8em; width:14em; margin-left:0.6em; font:normal 1em arial; }
+#investidor.bloco .button { position:absolute; top:0; left:5.5em;  }
+#investidor.bloco select { position:absolute; top:0; left:5.5em; width:15em; font:normal 1em arial; }
+#investidor ul,
+#investidor li { margin:0; padding:0; list-style:none; }
+#investidor ul { margin:0.8em 1em; }
+#investidor li { _height:1em; margin:0.5em 0; padding-left:1em; font:bold 1em verdana; background:transparent url('http://ec.i.uol.com.br/chamada-h3-bg.gif') no-repeat 0 0.5em; overflow:visible; margin-top:-6px; }
+
+#calculadoras .conteudo { background:#EAE9E4; }
+#calculadoras h3 { margin:0; height:3.5em; background:#DFDCD5 url('http://ec.i.uol.com.br/calculadoras-h3-bg.gif') no-repeat 0 0; }
+#calculadoras ul, #calculadoras li { margin:0; padding:0; list-style:none; }
+#calculadoras ul { margin:0.8em 1em; }
+#calculadoras li { _height:1em; margin:0.5em 0; padding-left:1em; font:bold 1em verdana; background:transparent url('http://ec.i.uol.com.br/chamada-h3-bg.gif') no-repeat 0 0.3em; overflow:visible; }
+#calculadoras .mais { height:3em; margin:0; padding:0; }
+#calculadoras .mais a { display:block; margin:0.8em 1em; color:#585657; }
+
+#agenda h3 { margin:0 0 0 1em; height:4.3em; background:transparent url('http://ec.i.uol.com.br/agenda-h3-bg.gif') no-repeat 0 0.7em; }
+#agenda dl, #col-direita #agenda dt, #col-direita #agenda dd { margin:0; padding:0; }
+#agenda dl { margin:1em 1em 0.1em 1em; }
+#agenda dt { margin:0 0 0.7em 0; font:normal 1em verdana; color:#666; }
+#agenda dd { margin:0 0 0.7em 0; font:normal 1em verdana; }
+#glossario .conteudo { background-color:#FFF; border:0.1em solid #DFDCD5; }
+#glossario h3 { margin:0; height:2.4em; background:transparent url('http://ec.i.uol.com.br/glossariofinanceiro-h3.gif') no-repeat 1.1em 0.8em; }
+#glossario p { margin:0.6em 1em; font:normal 1.2em arial; text-align:left; }
+#glossario .text { border:none; background:#DFDCD5; }
+#conversor.bloco .conteudo { background-color:#FFF; border:0.1em solid #DFDCD5; }
+#conversor.bloco h3 { height:3.7em; background:transparent url('http://ec.i.uol.com.br/conversor-h3.gif') no-repeat 1em 1.5em; }
+#conversor.bloco form p { position:relative; height:2em; }
+#conversor.bloco label { position:absolute; top:0; right:15.5em; display:block; width:4em; font:normal 1em arial; text-align:right; text-transform:uppercase; }
+#conversor.bloco .text { position:absolute; top:0; left:4.8em; width:14em; margin-left:0.6em; font:normal 1em arial; }
+#conversor.bloco .button { position:absolute; top:0; left:5.5em;  }
+#conversor.bloco select { position:absolute; top:0; left:5.5em; width:15em; font:normal 1em arial; }
+
+#uolnews-video { position:relative; background:#D8E5E7; width:100%; }
+#uolnews-video .top-left, #uolnews-video .top-right { display:none; }
+#uolnews-video .bottom-left { bottom:0; left:0; } 
+#uolnews-video .bottom-right { bottom:0; right:0; }
+#uolnews-video #player { width:22.9em; height:100%; background:#157283; overflow:hidden; }
+#uolnews-video a { padding:0; color:#FFF; background:none; }
+#uolnews-video .chamada { margin:1em; padding:0; font:normal 1.3em arial;color:#fff; }
+#uolnews-video ul, #uolnews-video li { margin:0; padding:0; list-style:none; }
+#uolnews-video ul { width:18.5em; margin:1em; }
+#uolnews-video li { width:100%; margin:0 0 0.5em 0; padding:0 0 0 1.6em; font:normal 1em arial; background:transparent url('http://img.uol.com.br/ico_assistir.gif') no-repeat 0 0.2em; }
+#uolnews-video li a { color:#000; }
+#uolnews-video li.indice { font:normal 1em arial; background:transparent url('http://img.uol.com.br/ico_indice.gif') no-repeat 0 0.2em; text-transform:uppercase;padding-bottom:1em;_padding-bottom:0em;*padding-bottom:0em;margin:0; } 
+.col-r #uolnews-video .top-left, .col-r #uolnews-video .bottom-left { visibility:hidden; }
+.col-r #uolnews-video .top-right, .col-r #uolnews-video .bottom-right { display:block; }
+.col-r #uolnews-video { width:35.8em; height:25.2em; }
+.col-r #uolnews-video #player { float:left; margin:0 0.6em 0 0; } 
+.col-r #uolnews-video ul { width:9.5em; margin:0; padding-top:1.5em; }
+.col-r #uolnews-video li { margin-bottom:1.4em; }
+
+#chamada-coluna .imagem { padding:1em; }
+#chamada-coluna .imagem img { width:13.2em; height:9.4em; }
+#chamada-coluna .chamada { margin:0; padding:0 1em 1em 1em; font:bold 1em verdana; }
+
+/* indice */
+#ultnot-home { clear:both; width:100%; margin:0; border-top:1em solid #FFF; border-bottom:1em solid #FFF; height:94em; }
+#ultnot-home h3 { margin-bottom:0.1em;padding:0.3em 0.6em;background:#003945 url('http://ec.i.uol.com.br/col-esquerda-bg.gif') repeat 0 0;font:normal 1em arial;color:#fff;position:relative; }
+#ultnot-home .receba-noticias { border-top:0.1em solid #DEDCD4;border-right:0.1em solid #DEDCD4;border-left:0.1em solid #DEDCD4;padding:0.6em 0 0.6em 1em; text-align:left; }
+#ultnot-home .receba-noticias h4 { display:block; margin:0; padding:0 0 0.5em 0; font:normal 1em arial; text-transform:uppercase; background:transparent; }
+#ultnot-home .receba-noticias ul, #ultnot-home .receba-noticias li { display:inline; margin:0; padding:0; list-style:none; font:normal 1em arial; text-transform:uppercase; }
+#ultnot-home .receba-noticias li { padding:0.3em 0 0.3em 1.4em; }
+#ultnot-home .receba-noticias .celular { background:transparent url('http://ec.i.uol.com.br/ico_noticias_celular.gif') no-repeat 0 center; }
+#ultnot-home .receba-noticias .clipping { background:transparent url('http://ec.i.uol.com.br/ico_noticias_clipping.gif') no-repeat 0 center; }
+#ultnot-home .receba-noticias .widget { background:transparent url('http://ec.i.uol.com.br/ico_noticias_widget.gif') no-repeat 0 center; }
+#ultnot-home .receba-noticias .rss { margin:0;padding:0; }
+#ultnot-home .receba-noticias .rss a { position:relative;top:0.3em; }
+#ultnot-home .ultnot-lista { width: 33.9em; padding:1.4em 1em;margin:0;border:0.1em solid #DEDCD4;}
+
+.tag-duvidas #ultnot-home .ultnot-lista { width: 57.6em !important; padding:1.4em 1em;margin:0;border:0.1em solid #DEDCD4;}
+
+#tag-cotacoes #ultnot-home .ultnot-lista,
+#tag-finpes #ultnot-home .ultnot-lista { width: 57.6em; } /* precisa setar o tamanho por causa de bug das bordas no IE6 */
+
+body.tag-investimentos #ultnot-home .ultnot-lista,
+body.tag-financaspessoais #ultnot-home .ultnot-lista { width: 33.8em !important; }
+
+#ultnot-home h4 { font:bold 1em verdana;color:#000;padding:0.4em;margin-bottom:0.8em;background:#ECEBE6;height:1.2em; }
+#ultnot-home dl { margin:0; }
+#ultnot-home dl dt { font:bold 1em verdana;color:#2AA1B5;margin-bottom:-0.1em; }
+#ultnot-home dl dd { margin:-1.4em 0 0.8em 4.6em; }
+#ultnot-home dl dd a { font:normal 1.3em arial;color:#000; }
+#ultnot-home p { margin-top:0.5em;clear:left; }
+#ultnot-home p img { margin:0 0.4em -0.2em 0; border:none; }
+#ultnot-home p a { font:1em arial; }
+#tag-home #ultnot-home .ultnot-lista { min-height:79.7em;_height:79.7em; }
+/* indice - coluna */
+#ultnot-coluna {  }
+#ultnot-coluna h3 { height:auto;margin:0 0 0.1em 0;padding:0.3em 0.6em;background:#003945 url('http://ec.i.uol.com.br/col-esquerda-bg.gif') repeat 0 0;font:normal 1em arial;color:#fff;text-indent:0;text-transform:uppercase;position:relative; }
+#ultnot-coluna .receba-noticias { height:5.5em;border:0.1em solid #DEDCD4;padding:0.6em 0; text-align:center; }
+#ultnot-coluna .receba-noticias h4 { display:inline; font:normal 0.9em arial; background:transparent }
+#ultnot-coluna .receba-noticias ul, #ultnot-coluna .receba-noticias li { margin:0; padding:0; list-style:none; }
+#ultnot-coluna .receba-noticias ul { margin:0.5em 1em; border:none; }
+#ultnot-coluna .receba-noticias li { float:left; width:39%; padding:0.3em 0 0.3em 1.3em; font:normal 1em arial; text-transform:uppercase; text-align:left; }
+#ultnot-coluna .receba-noticias .celular { background:transparent url('http://ec.i.uol.com.br/ico_noticias_celular.gif') no-repeat 0 center; }
+#ultnot-coluna .receba-noticias .clipping { background:transparent url('http://ec.i.uol.com.br/ico_noticias_clipping.gif') no-repeat 0 center; }
+#ultnot-coluna .receba-noticias .widget { background:transparent url('http://ec.i.uol.com.br/ico_noticias_widget.gif') no-repeat 0 center; }
+#ultnot-coluna .receba-noticias .rss { margin:0;padding:0; }
+#ultnot-coluna ul, #ultnot-coluna li { margin:0; padding:0; list-style:none; }
+#ultnot-coluna ul { clear:both; margin:0; border-right:0.1em solid #DEDCD4;border-left:0.1em solid #DEDCD4; padding:1em 1em 0.1em 1em; }
+#ultnot-coluna li { margin:0 0 1.3em 0; font:normal 1em verdana; }
+#ultnot-coluna li strong { color:#2AA1B5; }
+#ultnot-coluna h5 { border-right:0.1em solid #DEDCD4;border-bottom:0.1em solid #DEDCD4;border-left:0.1em solid #DEDCD4; padding:0.3em 1em; background:#EFF0EB; }
+#ultnot-coluna h5 a { padding-left:1.8em; font:normal 1em arial; text-transform:uppercase; background:transparent url('http://img.uol.com.br/ico_indice.gif') no-repeat 0 center; }
+
+#tag-home #quadrado-cinza { position:absolute;right:0em;padding:0.5em;width:11em;height:1em;background:#8C8C88;z-index:5; }
+#tag-home #quadrado-cinza .bottom-left-escuro { position:absolute;bottom:0em;_bottom:-0.9em;left:0em;background:url(http://ec.i.uol.com.br/bottom-left-escuro.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+
+/* cotacoes - home */
+#quadrado-cinza a { font:normal 1em arial;color:#fff;padding-left:1em;background:url(http://ec.i.uol.com.br/chamada-h3-bg.gif) 0 0.3em no-repeat;margin-left:0.2em; }
+#tag-cotacoes h1 { font:bold 2em arial;margin-bottom:0.2em; }
+#tag-cotacoes h2 { font:bold 1.6em arial;margin-bottom:0.5em; }
+#tag-cotacoes h3 { font:normal 1em arial;margin-bottom:0.3em; }
+#tag-cotacoes h3 a { color:#2aa1b5; }
+#tag-cotacoes p img { margin:0 0.4em -0.2em 0; border:none; }
+#tag-cotacoes p a { font:1em arial; }
+
+#tag-cotacoes .titulo { position:absolute;top:1em;left:1em;display:block; }
+#tag-cotacoes .titulo-folha { position:absolute;top:1em;left:1.4em;display:block; }
+#tag-cotacoes #bloco1 { height:12em;margin:0 0 1em 1em; }
+#tag-cotacoes #bloco1 .caixa-left { float:left;width:29em;height:12.8em;padding-right:0.3em;margin-right:1em;border-right:0.1em dotted #CECFCA; }
+#tag-cotacoes #bloco1 .caixa-left p { font:normal 1.3em arial; }
+#tag-cotacoes #bloco1 .caixa-right { float:left;width:29.4em;height:12.8em; }
+#tag-cotacoes #bloco2 { height:29.3em;margin:0 0 1em 1em;background:#eae9e3;border:1px solid #dedcd4; }
+#tag-cotacoes #bloco2 #quadrado-cinza { position:absolute;right:0em;padding:0.5em;width:11em;height:1em;background:#8C8C88; }
+#tag-cotacoes #bloco2 #quadrado-cinza .bottom-left-escuro { position:absolute;bottom:0em;_bottom:-0.9em;left:0em;background:url(http://ec.i.uol.com.br/bottom-left-escuro.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+#tag-cotacoes #bloco2 .col-1-esquerda { position:absolute;bottom:0.8em;left:0em;height:26.1em; }
+#tag-cotacoes #bloco2 .col-1-esquerda p { margin:0.8em 0 0 23em;font:normal 1em arial; }
+#tag-cotacoes #bloco2 .col-1-direita { position:absolute;right:1em;bottom:0.8em;height:26.1em; }
+#tag-cotacoes #bloco2 .col-1-direita table { width:27.4em;_width:27.2em;margin:1em 0 0.8em 0;_margin:1.5em 0 1em 0;padding:0.2em;border:0; }
+#tag-cotacoes #bloco2 .col-1-direita table thead tr { background:#dedcd4;color:#666;font:normal 1em arial; }
+#tag-cotacoes #bloco2 .col-1-direita table thead tr th { font:normal 1em arial; }
+#tag-cotacoes #bloco2 .col-1-direita table tbody tr { background:#fff; }
+#tag-cotacoes #bloco2 .col-1-direita table tbody tr td { border-bottom:0.1em solid #dedcd4;text-align:center;font:normal 1em arial; }
+#tag-cotacoes #bloco2 .col-1-direita table tbody tr th { border-bottom:0.1em solid #dedcd4;font:normal 1em arial;text-align:left;padding-left:0.5em; }
+#tag-cotacoes #bloco2 .col-1-direita #conversor { width:27.2em;height:15.5em;_height:14.9em;background:#fff;padding-top:0.1em;_padding-top:0.6em; }
+#tag-cotacoes #bloco2 .col-1-direita #conversor p { font:normal 1em arial;color:#666;background:url(http://ec.i.uol.com.br/chamada-h3-bg.gif) 0 0.3em no-repeat;padding-left:1em;margin:0.7em 0 0 1em; }
+#tag-cotacoes #bloco2 .col-1-direita #conversor .botao2 {z-index:3;font-family:arial;font-size:1em;color:#fff;border-top:solid 0.1em #AEDDE5;border-right:solid 0.1em #04252A;border-bottom:solid 0.1em #04252A;border-left:solid 0.1em #AEDDE5;background-color:#2AA1B5;height:1.7em;width:8em;display:block; }
+#tag-cotacoes #bloco2 .col-1-direita #conversor .conv { margin:0.5em 0;height:1.7em;width:6em;text-align:right;color:#666; }
+#tag-cotacoes #bloco2 .col-1-direita #conversor select,#tag-cotacoes #bloco2 .col-1-direita #conversor input { position:absolute;left:6.5em;font:normal 1em arial;width:15em; }
+#tag-cotacoes #bloco2 .col-1-direita #conversor .mais { margin:0; padding:0.3em 0 0.3em 0.5em; border-top:0.1em solid #DFDCD5; background:#DFDCD5; font:normal 1em arial; text-transform:uppercase; overflow:hidden; }
+#tag-cotacoes #bloco2 .col-1-direita #conversor .mais a { display:block; height:1.3em; padding-left:1em; background:transparent url('http://ec.i.uol.com.br/chamada-h3-bg.gif') no-repeat 0 0.3em; }
+#tag-cotacoes #bloco2 h4 { position:relative; font:bold 1.3em arial;color:#666;margin:1em 0 0 1em; }
+#tag-cotacoes #bloco2 h4 a { color:#666; }
+#tag-cotacoes #bloco2 h4 cite { position:absolute; top:0.2em; right:0; font:normal 0.8em arial; }
+#tag-cotacoes #bloco2 .grafico { margin:1em 0 0 1em;border:0; }
+#tag-cotacoes #bloco3 { height:32.6em;margin:0 0 1em 1em;background:#eae9e3;border:1px solid #dedcd4; }
+#tag-cotacoes #bloco3 #quadrado-cinza { position:absolute;right:0em;padding:0.5em;width:11em;height:1em;background:#8C8C88; }
+#tag-cotacoes #bloco3 #quadrado-cinza .bottom-left-escuro { position:absolute;bottom:0em;_bottom:-0.9em;left:0em;background:url(http://ec.i.uol.com.br/bottom-left-escuro.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+#tag-cotacoes #bloco3 .col-1-esquerda { position:absolute;bottom:0;left:0em;height:28.5em; }
+#tag-cotacoes #bloco3 .col-1-esquerda p { margin:0.6em 0 0 23em;font:normal 1em arial; }
+#tag-cotacoes #bloco3 .col-1-esquerda #nomundo { height:3.5em;width:29em;background:#fff;margin-left:1em; }
+#tag-cotacoes #bloco3 .col-1-esquerda #nomundo .bolsa { height:2.9em;width:5.1em;padding:0.3em;border-right:0.1em solid #dedcd4;text-align:center;font:normal 1em arial;float:left; }
+#tag-cotacoes #bloco3 .col-1-esquerda table { width:29em;margin-left:1em; }
+#tag-cotacoes #bloco3 .col-1-esquerda table thead tr { background:#dedcd4;text-align:left; }
+#tag-cotacoes #bloco3 .col-1-esquerda table thead th { font:normal 1em arial;color:#666;text-align:center;width:5.8em;text-transform:uppercase; }
+#tag-cotacoes #bloco3 .col-1-esquerda table tbody tr { background:#fff;text-align:left; }
+#tag-cotacoes #bloco3 .col-1-esquerda table tbody th { font:normal 1em arial;border-bottom:0.1em solid #dedcd4;font-weight:normal;padding-left:0.5em;height:1.3em; }
+#tag-cotacoes #bloco3 .col-1-esquerda table tbody td { font:normal 1em arial;border-bottom:0.1em solid #dedcd4;text-align:center; }
+#tag-cotacoes #bloco3 .col-1-esquerda #bovespa-info { width:30em; overflow:hidden; }
+#tag-cotacoes #bloco3 .col-1-esquerda #bovespa-info #bovespa-dados { width:15em; float:left; }
+#tag-cotacoes #bloco3 .col-1-esquerda #bovespa-info p.datahora { margin:0.7em 0 0 0; padding:0; font:normal 1em arial; color:#666; float:right; }
+#tag-cotacoes #bloco3 .col-1-direita { position:absolute;right:1em;bottom:0;height:28.5em; }
+#tag-cotacoes #bloco3 .col-1-direita #conversor { width:27.2em;height:26.8em;_height:26.3em;background:#fff;padding-top:0.5em;_padding-top:1.2em; }
+#tag-cotacoes #bloco3 .col-1-direita #conversor .linha { clear:both;height:1em;margin:0;padding:0;border-bottom:0.1em solid #eae9e3;_margin-top:-0.4em; }
+#tag-cotacoes #bloco3 .col-1-direita #conversor p { font:normal 1em arial;color:#666;background:url(http://ec.i.uol.com.br/chamada-h3-bg.gif) 0 0.3em no-repeat;padding-left:1em;margin:1em 0 0 1em; }
+#tag-cotacoes #bloco3 .col-1-direita #conversor p a { color:#666; }
+#tag-cotacoes #bloco3 .col-1-direita .desc { font:normal 1em arial;width:25em;margin:0.3em 0 0 2em; }
+#tag-cotacoes #bloco3 .col-1-direita .texto { height:1.3em;width:14.5em;font:normal 1em arial;margin:0.4em 0 0 2em;float:left; }
+#tag-cotacoes #bloco3 .col-1-direita .botao {z-index:3;font-family:arial;font-size:1em;color:#fff;border-top:solid 0.1em #AEDDE5;border-right:solid 0.1em #04252A;border-bottom:solid 0.1em #04252A;border-left:solid 0.1em #AEDDE5;background-color:#2AA1B5;height:1.7em;width:4em;float:left;margin:0.3em 0 0 0.5em; }
+#tag-cotacoes #bloco3 h4 { position:relative; font:bold 1.3em arial;color:#666;margin:0.7em 0 0 1em; }
+#tag-cotacoes #bloco3 h4 a { color:#666; }
+#tag-cotacoes #bloco3 h4 cite { position:absolute; top:0.2em; right:0; font:normal 0.8em arial; }
+#tag-cotacoes #bloco3 .grafico { margin:1em 0 0 1em;border:0; }
+#tag-cotacoes #bloco4 { height:16.8em;margin:0 0 1.2em 1em; }
+#tag-cotacoes #bloco4 #caixa-left { float:left;width:29.2em;height:16.8em;margin-right:1.2em;background:#eae9e3;border:1px solid #dedcd4; }
+#tag-cotacoes #bloco4 #caixa-left #quadrado-cinza { position:absolute;right:0em;_right:-0.1em;padding:0.5em;width:13.5em;height:1em;background:#8C8C88; }
+#tag-cotacoes #bloco4 #caixa-left #quadrado-cinza .bottom-left-escuro { position:absolute;bottom:0em;_bottom:-0.9em;left:0em;background:url(http://ec.i.uol.com.br/bottom-left-escuro.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+#tag-cotacoes #bloco4 #caixa-right { float:left;width:29em;height:16.8em;background:#eae9e3;border:1px solid #dedcd4; }
+#tag-cotacoes #bloco4 table { width:27.4em;_width:27.2em;margin:3.5em 0 0 0.8em;_margin:3em 0 0 1em;padding:0.2em;border:0; }
+#tag-cotacoes #bloco4 table thead tr { background:#dedcd4;color:#666;font:normal 1em arial; }
+#tag-cotacoes #bloco4 table thead tr th { font:normal 1em arial; }
+#tag-cotacoes #bloco4 table tbody tr { background:#fff;height:1.8em;*height:1.6em; }
+#tag-cotacoes #bloco4 table tbody tr td { border-bottom:0.1em solid #dedcd4;text-align:center;font:normal 1em arial; }
+#tag-cotacoes #bloco4 table tbody tr th { border-bottom:0.1em solid #dedcd4;font:normal 1em arial;text-align:left;padding-left:0.5em; }
+#tag-cotacoes #bloco4 p { position:absolute;right:1em;font:normal 1em arial;bottom:1em; }
+#tag-cotacoes #bloco4 #caixa-right a { position:absolute;left:1em;bottom:1em;font:normal 1em arial;padding-left:1.6em;background:url(http://img.uol.com.br/ico_ajuda.gif) 0 0.2em no-repeat; }
+#tag-cotacoes #bloco5 { height:12.8em;margin:0 0 1em 1em; }
+#tag-cotacoes #bloco5 #caixa-5-left { float:left;width:14em;height:12.8em;margin-right:1em;border:1px solid #dedcd4; }
+#tag-cotacoes #bloco5 #caixa-5-left p { margin:3.7em 0.5em 0 0.5em;font:normal 1.3em arial;text-align:center; }
+#tag-cotacoes #bloco5 #caixa-5-center { float:left;width:21.6em;height:12.8em;margin-right:1em;border:1px solid #dedcd4; }
+#tag-cotacoes #bloco5 #caixa-5-center p { margin:2.7em 0em 0 0.7em;font:normal 1.3em arial; }
+#tag-cotacoes #bloco5 #caixa-5-center .logo { position:absolute;bottom:1em;right:1em;border:0; }
+#tag-cotacoes #bloco5 #caixa-5-center .texto { height:1.3em;width:14.5em;font:normal 1em arial;margin:1em 0 0 1em;float:left; }
+#tag-cotacoes #bloco5 #caixa-5-center .botao {z-index:3;font-family:arial;font-size:1em;color:#fff;border-top:solid 0.1em #AEDDE5;border-right:solid 0.1em #04252A;border-bottom:solid 0.1em #04252A;border-left:solid 0.1em #AEDDE5;background-color:#2AA1B5;height:1.7em;width:4em;float:left;margin:0.8em 0 0 0.5em;}
+#tag-cotacoes #bloco5 #fundosinvestimento { float:left;width:21.6em;height:7em;border:1px solid #dedcd4; }
+#tag-cotacoes #bloco5 #fundosinvestimento ul { margin:3.5em 0 0 1em;padding:0;list-style-type:none; }
+#tag-cotacoes #bloco5 #fundosinvestimento ul li { height:1.5em; }
+#tag-cotacoes #bloco5 #fundosinvestimento ul li a { font:normal 1.3em arial;padding-left:1em;background:url(http://ec.i.uol.com.br/chamada-h3-bg.gif) 0 0.4em no-repeat; }
+#tag-cotacoes #bloco5 #fundosinvestimento .logo { position:absolute;bottom:1em;right:1em;border:0; }
+#tag-cotacoes #bloco5 #investidor {position:relative; height:6em; width:21.6em; float:right; padding-top:5px;}
+#tag-cotacoes #bloco5 #investidor h3 {height:12px; background-position:0;  }
+#tag-cotacoes #bloco5 #investidor ul { margin:8px;}
+#tag-cotacoes #bloco5 #investidor a { font-size:13px; font-family:Arial, Helvetica, sans-serif;}
+#tag-cotacoes #bloco5 #investidor .conteudo { height:5em;}
+
+/* cotacoes - bolsas */
+.tag-bolsas h1 { font:bold 16px arial !important;color:#666;height:1.7em;padding:0.2em 0 0 1em;background:url(http://ec.i.uol.com.br/bg_titulo.gif) 0.6em 0 no-repeat; }
+.tag-bolsas #variacao table { width:59.7em;height:3.5em;margin:0 0 1em 1em; }
+.tag-bolsas #variacao table th { text-align:center;font:normal 1em arial; }
+.tag-bolsas #variacao table th span { color:#2AA1B5; }
+.tag-bolsas #variacao table th .pais { color:#000; }
+.tag-bolsas #variacao table th .bolsa { color:#666; }
+.tag-bolsas #variacao table td { text-align:center;font:bold 1.3em arial; }
+.tag-bolsas #grafico { background:#EAE9E3;width:59.7em;height:44.7em;margin-left:1em; }
+.tag-bolsas #grafico #col-esq { height:44.7em;width:46.7em;background:#DEDCD4;float:left; }
+.tag-bolsas #grafico #col-esq h4 a {position:absolute;bottom:1em;left:1em;font:normal 10px arial;padding-left:1.6em;background:url(http://img.uol.com.br/ico_ajuda.gif) 0 0.2em no-repeat; }
+.tag-bolsas #grafico #col-esq p {position:absolute;bottom:1em;right:14em;font:normal 1em arial;}
+.tag-bolsas #grafico #col-dir { height:44.7em;width:13em;float:left; }
+.tag-bolsas #grafico #col-dir p { font:normal 1.3em arial;padding:2em 0.8em 1em 0.8em; }
+.tag-bolsas #grafico #col-dir ul { margin:0 1em;padding:0;list-style-type:none; }
+.tag-bolsas #grafico #col-dir ul li { height:3em; }
+.tag-bolsas #grafico h2 { font:bold 1.6em arial;color:#666;padding:1em 0 0 0.6em; }
+.tag-bolsas #grafico #dados { width:44.7em; height:8em; margin:0 1em; overflow:hidden; }
+.tag-bolsas #glossario .text { border:none; background:#DFDCD5;width:8em; }
+#bolsas-dados { margin:0; border:none; background:#DEDCD4 url('http://img.uol.com.br/album/wait.gif') no-repeat center 0.8em; }
+#bolsas-dados table { width:44.7em;height:4em;text-align:center; font-size:1em; }
+#bolsas-dados table th { background:#ABAAA5;color:#fff;font:normal 1em arial; }
+#bolsas-dados table td { background:#fff;color:#000;font:normal 1.3em arial; }
+#bolsas-dados h3 { margin:1.5em 0 0 0; font:normal 1em arial;color:#666;text-transform:none;text-align:right; }
+#bolsas-grafico { height:30em; background:#FFF url('http://img.uol.com.br/album/wait.gif') no-repeat center center; }
+#bolsas-grafico .buol, #bolsas-grafico #copyright { display:none; }
+.tag-bolsas #grafico .grafico { position:absolute;left:1em;top:11.5em;width:44.7em;height:30.5em;} 
+.tag-bolsas #calendario { position:absolute;left:0em;top:8.5em;z-index:2; }
+.tag-bolsas #calendario.sem-dia { left:45em; }
+.tag-bolsas #calendario #abas {margin:1em 0 0 1em;height:2em;width:18.5em;overflow:hidden;border-bottom:0.1em solid #DEDCD4;}
+.tag-bolsas #calendario.sem-dia #abas { width:14.5em; }
+.tag-bolsas #calendario #abas ul {margin:0;padding:0;list-style-type: none;display:block;height:3em;width:59.7em;height:2em;overflow:hidden;position:absolute;top:1.1em;left:1em;}
+.tag-bolsas #calendario #abas ul li{display:block;float:left;margin:0;padding:0;height:1.9em;}  
+.tag-bolsas #calendario #abas ul li.dia {width:4em;padding:0 0.1em 0 0}                                                                                   
+.tag-bolsas #calendario.sem-dia #abas ul li.dia { display:none; }
+.tag-bolsas #calendario #abas ul li.sem {width:6.5em;padding:0 0.1em 0 0}
+.tag-bolsas #calendario #abas ul li.mes {width:4em;padding:0 0.1em 0 0}
+.tag-bolsas #calendario #abas ul li.ano {width:4em;padding:0 0.1em 0 0}
+.tag-bolsas #calendario #abas ul li a{ display:block;background-color:#2AA1B5;color:#fff;padding:0.3em 0;border-top:0.1em solid #DEDCD4;border-bottom:0.1em solid #fff;text-align:center;}
+.tag-bolsas.dia #calendario #abas ul li a#dia, .tag-bolsas.semana #calendario #abas ul li a#semana, .tag-bolsas.mes #calendario #abas ul li a#mes, .tag-bolsas.ano #calendario #abas ul li a#ano, .tag-bolsas #calendario #abas ul li a.sel, #calendario #abas ul li a:hover{ font-weight:normal;background-color:#fff;color:#000;border-bottom:0.2em solid #fff;text-decoration:none;}  
+.tag-bolsas .tag-dia #abas ul li.dat a{font-weight:bold;background-color:#fff;border-bottom:0.2em solid #fff;text-decoration:none;}
+.tag-bolsas .tag-semana #abas ul li.dat a{font-weight:bold;background-color:#fff;border-bottom:0.2em solid #fff;text-decoration:none;}
+.tag-bolsas .tag-mes #abas ul li.dat a{font-weight:bold;background-color:#fff;border-bottom:0.2em solid #fff;text-decoration:none;}
+.tag-bolsas .tag-ano #abas ul li.dat a{font-weight:bold;background-color:#fff;border-bottom:0.2em solid #fff;text-decoration:none;}
+.tag-bolsas #abas ul li div.ae{ width:0.2em;height:1.9em;background:url(http://ec.i.uol.com.br/bg_aba1.gif) no-repeat;float:left; }
+.tag-bolsas #abas ul li div.ad{ width:0.2em;height:1.9em;background:url(http://ec.i.uol.com.br/bg_aba2.gif) no-repeat;float:right; }
+.tag-bolsas #bolsas-bloco2 { width:59.7em;height:23em;margin:1em 0 1em 1em; }
+.tag-bolsas #bolsas-bloco2 #col-l { width:38.5em;_width:38.4em;height:21.1em;padding:1em;margin-right:1em;_margin-right:1.2em;border:0.1em solid #DEDCD4;float:left;background:#eae9e4; }
+.tag-bolsas #bolsas-bloco2 #col-l #conversor { height:21.1em;_width:38.4em;background:#fff; }
+.tag-bolsas #bolsas-bloco2 #col-l #conversor .linha { clear:both;height:0.7em;margin:0;padding:0;border-bottom:0.1em solid #eae9e3;_margin-top:-0.4em; }
+.tag-bolsas #bolsas-bloco2 #col-l #conversor p { font:normal 1em arial;color:#666;background:url(http://ec.i.uol.com.br/chamada-h3-bg.gif) 0 0.9em no-repeat;padding:0.6em 0 0 1em;margin-left:1em; }
+.tag-bolsas #bolsas-bloco2 #col-l #conversor p a { color:#666; }
+.tag-bolsas #bolsas-bloco2 #col-l .desc { font:normal 1em arial;width:35em;margin:0.3em 0 0 2em; }
+.tag-bolsas #bolsas-bloco2 #col-l .texto { height:1.3em;width:14.5em;font:normal 1em arial;margin:0.4em 0 0 2em;float:left; }
+.tag-bolsas #bolsas-bloco2 #col-l .botao {z-index:3;font-family:arial;font-size:1em;color:#fff;border-top:solid 0.1em #AEDDE5;border-right:solid 0.1em #04252A;border-bottom:solid 0.1em #04252A;border-left:solid 0.1em #AEDDE5;background-color:#2AA1B5;height:1.7em;width:4em;float:left;margin:0.3em 0 0 0.5em; }
+.tag-bolsas #bolsas-bloco2 #col-l .borda { position:relative; }
+.tag-bolsas #bolsas-bloco2 #col-l .borda .top-left { position:absolute;top:0em;left:0em;background:url(http://ec.i.uol.com.br/top-left-i.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.tag-bolsas #bolsas-bloco2 #col-l .borda .top-right { position:absolute;top:0em;right:0em;background:url(http://ec.i.uol.com.br/top-right-i.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.tag-bolsas #bolsas-bloco2 #col-l .borda .bottom-left { position:absolute;bottom:0em;left:0em;_bottom:-0.8em;background:url(http://ec.i.uol.com.br/bottom-left-i.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.tag-bolsas #bolsas-bloco2 #col-l .borda .bottom-right { position:absolute;bottom:0em;right:0em;_bottom:-0.8em;background:url(http://ec.i.uol.com.br/bottom-right-i.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.tag-bolsas #bolsas-bloco2 #col-r { width:17.9em;height:23.7em;float:left; }
+
+.tag-cambio h1 { font:bold 16px arial !important;color:#666;height:1.7em;padding:0.2em 0 0 1em;background:url(http://ec.i.uol.com.br/bg_titulo.gif) 0.6em 0 no-repeat; }
+.tag-cambio .titulo { margin-left:-0.3em !important; }
+.tag-cambio #resumo { height:23em;margin:0.5em 0 1em 1em; }
+.tag-cambio #resumo .col-l { width:37.8em;height:22.8em;margin-right:1.1em;background:#eae9e3;border:0.1em solid #DEDCD4;float:left; }
+.tag-cambio #resumo .col-l table { width:36.3em;padding:0.3em;border:0;position:absolute;top:3em;left:0.7em; }
+.tag-cambio #resumo .col-l table thead tr { background:#dedcd4;color:#666;font:normal 1em verdana; }
+.tag-cambio #resumo .col-l table thead tr th { font-weight:normal;width:7.4em; }
+.tag-cambio #resumo .col-l table tbody tr { background:#fff;color:#000;font:normal 1.3em arial; }
+.tag-cambio #resumo .col-l table tbody tr th { font-weight:normal;text-align:left;padding-left:0.5em;padding-top:0.2em;;border-bottom:0.1em solid #DEDCD4; }
+.tag-cambio #resumo .col-l table tbody tr td { border-bottom:0.1em solid #DEDCD4;text-align:center; }
+.tag-cambio #resumo .col-l p { position:absolute;top:1.2em;right:1em;font:normal 1em arial;color:#666; }
+.tag-cambio #resumo .col-l h4 { position:absolute;bottom:1.5em;right:1em;color:#666;font:normal 1em arial; }
+.tag-cambio #resumo .col-r { position:relative; width:20.4em;height:22.8em;border:0.1em solid #DEDCD4;float:left; }
+.tag-cambio #resumo .col-r p { font:normal 1.3em arial;margin:2.7em 0 1em 0.7em; }
+.tag-cambio #resumo .col-r .botao2 {z-index:3;font-family:arial;font-size:1em;color:#fff;border-top:solid 0.1em #AEDDE5;border-right:solid 0.1em #04252A;border-bottom:solid 0.1em #04252A;border-left:solid 0.1em #AEDDE5;background-color:#2AA1B5;height:1.7em;width:8em;display:block; }
+.tag-cambio #resumo .col-r .conv { margin:0.5em 0;height:1.7em;width:5.7em;text-align:right;color:#666; }
+.tag-cambio #resumo .col-r select,.tag-cambio #resumo .col-r input { position:absolute;left:6.5em;font:normal 1em arial;width:12em; }
+.tag-cambio #resumo .col-r .mais { margin:2.2em 0 0 0; padding:0.3em 0 0.3em 0.5em; border-top:0.1em solid #DFDCD5; background:#DFDCD5; font:normal 1em arial; text-transform:uppercase; overflow:hidden; }
+.tag-cambio #resumo .col-r .mais a { display:block; height:1.3em; padding-left:1em; background:transparent url('http://ec.i.uol.com.br/chamada-h3-bg.gif') no-repeat 0 0.3em; }
+.tag-cambio #grafico { height:44.6em;margin-left:1em;margin-bottom:1em;background:#eae9e3;border:0.1em solid #DEDCD4;position: relative; }
+.tag-cambio #grafico .col-l { width:46.4em; height:44.6em; position: absolute; top: 0; left: 0; /*float:left;*/background:#dedcd4; }
+.tag-cambio #grafico .col-l h2 { font:bold 1.6em arial;color:#666;margin:0.5em; }
+.tag-cambio #grafico #dados { width:44.7em; height:8em; margin:0 1em; overflow:hidden; }
+#cambio-dados { margin:0; border:0; background:#dedcd4; }
+#cambio-dados table { width:44.5em;margin:0; font-size:1em; }
+#cambio-dados table thead tr { background:#ABAAA5;font:normal 1em verdana;color:#fff; }
+#cambio-dados table thead th { font-weight:normal;width:14.8em; }
+#cambio-dados table tbody tr { background:#fff;font:normal 1.3em arial }
+#cambio-dados table tbody td { text-align:center; }
+#cambio-dados h3 { margin:1.5em 0 0 0; font:normal 1em arial;color:#666;text-transform:none;text-align:right; }
+#cambio-grafico { height:30em; background:#FFF url('http://img.uol.com.br/album/wait.gif') no-repeat center center; }
+#cambio-grafico .buol, #cambio-grafico #copyright { display:none; }
+.tag-cambio #grafico .col-l h4 a {position:absolute;bottom:1.5em;left:1em;font:normal 10px arial;padding-left:1.6em;background:url(http://img.uol.com.br/ico_ajuda.gif) 0 0.2em no-repeat; }
+.tag-cambio #grafico .col-l p {position:absolute;bottom:1.5em;right:1em;font:normal 1em arial;}
+.tag-cambio #grafico .grafico { position:absolute;left:1em;top:10.5em;width:44.3em;height:30.5em;} 
+.tag-cambio #grafico #calendario { position:absolute;left:0em;top:7.5em;z-index:2; }
+.tag-cambio #grafico #calendario.sem-dia { left:45em; }
+.tag-cambio #grafico #calendario #abas {margin:1em 0 0 1em;height:2em;width:18.5em;overflow:hidden;border-bottom:0.1em solid #DEDCD4;}
+.tag-cambio #grafico #calendario.sem-dia #abas { width:14.5em; }
+.tag-cambio #grafico #calendario #abas ul {margin:0;padding:0;list-style-type: none;display:block;height:3em;width:59.7em;height:2em;overflow:hidden;position:absolute;top:1.1em;left:1em;}
+.tag-cambio #grafico #calendario #abas ul li{display:block;float:left;margin:0;padding:0;height:1.9em;}  
+.tag-cambio #grafico #calendario #abas ul li.dia {width:4em;padding:0 0.1em 0 0}                                                                                   
+.tag-cambio #grafico #calendario.sem-dia #abas ul li.dia { display:none; }
+.tag-cambio #grafico #calendario #abas ul li.sem {width:6.5em;padding:0 0.1em 0 0}
+.tag-cambio #grafico #calendario #abas ul li.mes {width:4em;padding:0 0.1em 0 0}
+.tag-cambio #grafico #calendario #abas ul li.ano {width:4em;padding:0 0.1em 0 0}
+.tag-cambio #grafico #calendario #abas ul li a{ display:block;background-color:#2AA1B5;color:#fff;padding:0.3em 0;border-top:0.1em solid #DEDCD4;border-bottom:0.1em solid #fff;text-align:center;}
+.tag-cambio.dia #calendario #abas ul li a#dia, .tag-cambio.semana #calendario #abas ul li a#semana, .tag-cambio.mes #calendario #abas ul li a#mes, .tag-cambio.ano #calendario #abas ul li a#ano, .tag-cambio #calendario #abas ul li a.sel, #grafico #calendario #abas ul li a:hover { font-weight:normal;background-color:#fff;color:#000;border-bottom:0.2em solid #fff;text-decoration:none; }
+.tag-cambio .tag-dia #abas ul li.dat a{font-weight:bold;background-color:#fff;border-bottom:0.2em solid #fff;text-decoration:none;}
+.tag-cambio .tag-semana #abas ul li.dat a{font-weight:bold;background-color:#fff;border-bottom:0.2em solid #fff;text-decoration:none;}
+.tag-cambio .tag-mes #abas ul li.dat a{font-weight:bold;background-color:#fff;border-bottom:0.2em solid #fff;text-decoration:none;}
+.tag-cambio .tag-ano #abas ul li.dat a{font-weight:bold;background-color:#fff;border-bottom:0.2em solid #fff;text-decoration:none;}
+.tag-cambio #abas ul li div.ae{ width:0.2em;height:1.9em;background:url(http://ec.i.uol.com.br/bg_aba1.gif) no-repeat;float:left; }
+.tag-cambio #abas ul li div.ad{ width:0.2em;height:1.9em;background:url(http://ec.i.uol.com.br/bg_aba2.gif) no-repeat;float:right; }
+.tag-cambio #grafico .col-r { width:13.2em; height:44.6em; position: absolute; top: 0; right: 0; background:#eae9e3; }
+.tag-cambio #grafico .col-r p { padding:1em 0 1em 0.5em;font:normal 1.3em arial; }
+.tag-cambio #grafico .col-r #rolagem { width:13.2em;height:34.5em;overflow:auto; }
+.tag-cambio #grafico .col-r #rolagem h4 { font:normal 1em arial;margin-left:0.8em;color:#2aa1b5; } 
+.tag-cambio #grafico .col-r #rolagem .principais { margin:0.5em 1em;padding:0;list-style-type:none;border-bottom:0.1em dotted #b7b5ac;padding-bottom:1em; }
+.tag-cambio #grafico .col-r #rolagem .principais a { font:bold 1em verdana;line-height:1.5em;/*background:url(http://ec.i.uol.com.br/chamada-h3-bg.gif) 0 0.4em no-repeat;padding-left:1em;*/ }
+.tag-cambio #grafico .col-r #rolagem .todos { margin:0.5em 1em;padding:0;list-style-type:none; }
+.tag-cambio #grafico .col-r #rolagem .todos a { font:normal 1em arial;line-height:1.5em; }
+
+.tag-indices h1 { font:bold 16px arial !important;color:#666;height:1.7em;padding:0.2em 0 0 1em;background:url(http://ec.i.uol.com.br/bg_titulo.gif) 0.6em 0 no-repeat; }
+.tag-indices #bl1 { width:59.4em;height:15.9em;background:#eae9e3;border:0.1em solid #DEDCD4;margin:0.5em 0 1em 1.1em; }
+.tag-indices #bl1 table { position:absolute;top:3.7em;left:1em;width:27em; }
+.tag-indices #bl1 table thead tr { background:#dedcd4;text-align:left; }
+.tag-indices #bl1 table thead th { font:normal 1em arial;color:#666;padding-left:0.5em; }
+.tag-indices #bl1 table tbody tr { background:#fff;text-align:left; }
+.tag-indices #bl1 table tbody th { font:normal 1.3em arial;border-bottom:0.1em solid #dedcd4;font-weight:normal;padding-left:0.5em;height:1.3em; }
+.tag-indices #bl1 table tbody td { font:normal 1.3em arial;border-bottom:0.1em solid #dedcd4;padding-left:0.5em; }
+.tag-indices #bl1 p { position:absolute;bottom:1em;left:21em;font:normal 1em arial;color:#666; }
+.tag-indices #bl1 .oquesao { position:absolute;bottom:1em;left:1em;font:normal 1em arial;color:#666;background:url(http://img.uol.com.br/ico_ajuda.gif) 0 0.2em no-repeat;padding-left:1.5em; }
+.tag-indices #bl1 a.oquesao { color:#000; }
+.tag-indices #bl1 #historico { position:absolute;top:3.7em;left:29em;width:29.5em;height:11.2em;background:#fff; }
+.tag-indices #bl1 #historico #quadrado-cinza { position:absolute;right:0em;padding:0.5em;width:10em;height:1em;background:#8C8C88; }
+.tag-indices #bl1 #historico #quadrado-cinza .bottom-left-escuro { position:absolute;bottom:0em;_bottom:-0.9em;left:0em;background:url(http://ec.i.uol.com.br/bottom-left-escuro.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.tag-indices #bl1 #historico ul { margin:4.2em 0.5em 0.5em 1.5em;padding:0;list-style-type:none; }
+.tag-indices #bl1 #historico ul li { width:9em;float:left; }
+.tag-indices #bl1 #historico ul li a { font:normal 1em arial;color:#666;background:url(http://ec.i.uol.com.br/chamada-h3-bg.gif) 0 0.4em no-repeat;padding-left:1.2em; }
+.tag-indices #bl1 .borda { position:relative; }
+.tag-indices #bl1 .borda .top-left { position:absolute;top:0em;left:0em;background:url(http://ec.i.uol.com.br/top-left-i.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.tag-indices #bl1 .borda .top-right { position:absolute;top:0em;right:0em;background:url(http://ec.i.uol.com.br/top-right-i.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.tag-indices #bl1 .borda .bottom-left { position:absolute;bottom:0em;left:0em;_bottom:-0.8em;background:url(http://ec.i.uol.com.br/bottom-left-i.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.tag-indices #bl1 .borda .bottom-right { position:absolute;bottom:0em;right:0em;_bottom:-0.8em;background:url(http://ec.i.uol.com.br/bottom-right-i.gif) 0 0 no-repeat;width:0.4em;height:0.4em;z-index:1000; }
+.tag-indices #bl2 { height:18.7em;margin:0 0 1em 1.1em; }
+.tag-indices #bl2 table { position:absolute;top:3.7em;left:1em;width:57.4em; }
+.tag-indices #bl2 table thead tr { background:#dedcd4;text-align:left; }
+.tag-indices #bl2 table thead th { font:normal 1em arial;color:#666;padding-left:0.5em; }
+.tag-indices #bl2 table tbody tr { background:#fff;text-align:left; }
+.tag-indices #bl2 table tbody th { font:normal 1.3em arial;border-bottom:0.1em solid #dedcd4;font-weight:normal;padding-left:0.5em;height:1.3em; }
+.tag-indices #bl2 table tbody td { font:normal 1.3em arial;border-bottom:0.1em solid #dedcd4;padding-left:0.5em; }
+.tag-indices #bl2 h3 { position:absolute;top:1.6em;right:1.1em;font:normal 1em arial;color:#666;text-transform:none; }
+.tag-indices #bl2 h4 a {position:absolute;bottom:1.3em;left:1em;font:normal 10px arial;padding-left:1.6em;background:url(http://img.uol.com.br/ico_ajuda.gif) 0 0.2em no-repeat; }
+.tag-indices #bl2 p {position:absolute;bottom:1.3em;right:1.2em;font:normal 1em arial;color:#666; }
+.tag-indices #bl2 .col-l { background:#eae9e3;border:0.1em solid #DEDCD4;height:18.5em; }
+.tag-indices #bl3 { height:21em;margin-left:1.1em; }
+.tag-indices #bl3 .col-l { background:#eae9e3;border:0.1em solid #DEDCD4;height:20.1em;width:34.9em;margin-right:1.2em;float:left; }
+.tag-indices #bl3 .col-l table { position:absolute;top:3.7em;left:1em;width:32.9em; }
+.tag-indices #bl3 .col-l table thead tr { background:#dedcd4;text-align:left; }
+.tag-indices #bl3 .col-l table thead th { font:normal 1em arial;color:#666;padding-left:0.5em; }
+.tag-indices #bl3 .col-l table tbody tr { background:#fff;text-align:left; }
+.tag-indices #bl3 .col-l table tbody th { font:normal 1.3em arial;border-bottom:0.1em solid #dedcd4;font-weight:normal;padding-left:0.5em;height:1.3em; }
+.tag-indices #bl3 .col-l table tbody td { font:normal 1.3em arial;border-bottom:0.1em solid #dedcd4;padding-left:0.5em; }
+.tag-indices #bl3 .col-l p {position:absolute;bottom:4.5em;right:1.2em;font:normal 1em arial;color:#666; }
+.tag-indices #bl3 .col-r { width:23.4em;float:left; }
+.tag-indices #bl3 .col-r img { margin:1em 0 0.5em 0; }
+.tag-indices #bl3 .col-r .col-r-top { height:8.7em;border:0.1em solid #DEDCD4;margin-bottom:1em;text-align:center; }
+.tag-indices #bl3 .col-r .col-r-bottom { height:9.9em;border:0.1em solid #DEDCD4;text-align:center; }
+.tag-indices #bl3 .col-r .col-r-bottom .input { font:normal 1em verdana;width:16em;float:left;margin:0em 0.5em 0 1.3em }
+.tag-indices #bl3 .col-r .col-r-bottom .botao {z-index:3;font-family:arial;font-size:1em;color:#fff;border-top:solid 0.1em #AEDDE5;border-right:solid 0.1em #04252A;border-bottom:solid 0.1em #04252A;border-left:solid 0.1em #AEDDE5;background-color:#2AA1B5;height:1.7em;width:3.5em;float:left;margin-top:0em; }
+
+/* indice - cotacoes */
+#ultnot-cotacoes { clear:both; width:59.8em; margin:0 1em; border-bottom:1em solid #FFF; }
+#ultnot-cotacoes h3 { margin-bottom:0.1em;padding:0.3em 0.6em;background:#003945 url('http://ec.i.uol.com.br/col-esquerda-bg.gif') repeat 0 0;font:normal 1em arial;color:#fff;position:relative; }
+#ultnot-cotacoes .receba-noticias { border-top:0.1em solid #DEDCD4;border-right:0.1em solid #DEDCD4;border-left:0.1em solid #DEDCD4;padding:0.6em 0; }
+#ultnot-cotacoes .receba-noticias h4 { display:inline; font:normal 1em arial; background:transparent;margin-left:0.4em; }
+#ultnot-cotacoes .receba-noticias ul, #ultnot-cotacoes .receba-noticias li { display:inline; margin:0; padding:0; list-style:none; font:normal 1em verdana; text-transform:uppercase; }
+#ultnot-cotacoes .receba-noticias li { padding:0.3em 0 0.3em 1.4em; }
+#ultnot-cotacoes .receba-noticias .celular { background:transparent url('http://ec.i.uol.com.br/ico_noticias_celular.gif') no-repeat 0 center; }
+#ultnot-cotacoes .receba-noticias .clipping { background:transparent url('http://ec.i.uol.com.br/ico_noticias_clipping.gif') no-repeat 0 center; }
+#ultnot-cotacoes .receba-noticias .widget { background:transparent url('http://ec.i.uol.com.br/ico_noticias_widget.gif') no-repeat 0 center; }
+#ultnot-cotacoes .receba-noticias .rss { padding:0;margin:0; }
+#ultnot-cotacoes .receba-noticias .rss a { position:relative;top:0.3em; }
+#ultnot-cotacoes .ultnot-lista { width: 57.6em; padding:1.4em 1em;margin:0;border:0.1em solid #DEDCD4; }
+#ultnot-cotacoes h4 { font:bold 1em verdana;color:#000;padding:0.4em;margin-bottom:0.8em;background:#ECEBE6;height:1.2em; }
+#ultnot-cotacoes dl { margin:0; }
+#ultnot-cotacoes dl dt { font:bold 1em verdana;color:#2AA1B5;margin-bottom:-0.1em; }
+#ultnot-cotacoes dl dd { margin:-1.4em 0 0.8em 4.6em; }
+#ultnot-cotacoes dl dd a { font:normal 1.3em arial;color:#000; }
+#ultnot-cotacoes p { margin-top:0.5em;clear:left; }
+#ultnot-cotacoes p img { margin:0 0.4em -0.2em 0; border:none; }
+#ultnot-cotacoes p a { font:1em arial; }
+
+#financaspessoais { overflow:hidden; }
+#financaspessoais .maissobre { position:absolute;top:6.2em;right:2em;background:url(http://img.uol.com.br/ico_enviaremail.gif) 0 0.3em no-repeat;padding-left:2em; }
+#financaspessoais a.maissobre { color:#000; }
+#financaspessoais .maissobre select { font:normal 1em arial; }
+#financaspessoais #bordatexto { border:0.1em solid #dedcd4;margin-left:1em;padding:1em; }
+#financaspessoais #tire-duvidas { overflow:hidden; }
+#financaspessoais #tire-duvidas h4 { width:40.9em;font:bold 1.3em arial;color:#000;margin:1em 0 0.5em 0; }
+#financaspessoais #tire-duvidas p { font:bold 1.3em arial;color:#000;margin:1em 0 0.5em 0; }
+#financaspessoais #tire-duvidas .caixa-bottom { overflow:hidden;border:1px solid #fff;margin:0; }
+#financaspessoais #tire-duvidas .caixa-bottom ul { border:0;margin:0;padding:0;list-style-type:none; }
+#financaspessoais #tire-duvidas .caixa-bottom ul li { padding:0.5em;width:18em;float:left;margin:0 0.1em 0.1em 0;background:#eae9e3;height:1.3em;overflow:hidden; }
+#financaspessoais #miolo .caixa-bottom ul li { padding:0.5em;width:19.6em;float:left;margin:0 0.1em 0.1em 0;background:#eae9e3;height:1.3em;overflow:hidden; }
+#financaspessoais #miolo h4 { font:bold 1.3em arial;padding:0.2em;color:#000;background:#dedcd4;margin:1em 0 0.5em 0.1em;width:408px; }
+#financaspessoais #tire-duvidas .caixa-bottom ul li a { padding-left:1em;background:url(http://ec.i.uol.com.br/chamada-h3-bg.gif) 0 0.3em no-repeat;font:normal 1em verdana;color:#000; }
+#financaspessoais #financas-destaques { height:auto;margin:1em 0 1em 1em;_margin:1em 0 0 1em; overflow:hidden; }
+#financaspessoais #financas-destaques .col-l { width:22.6em;margin-right:1em;float:left; }
+#financaspessoais #financas-destaques .col-r { width:36.1em; float:left; overflow:hidden; }
+
+#ferramentas {position:relative;height:20px;background-color:#eee;font-size:10px; font-family:verdana;margin:10px 0 0 0;clear:both; } /* bg geral */
+#ferramentas a {color:black;text-decoration:none;font-family:arial; }
+#ferramentas a:hover {text-decoration:underline; }
+#ferramentas div {color:black;padding-top:4px; }
+#ferramentas div a img {vertical-align:-1px;margin-right:4px; }
+#ferramentas #item-esquerda {position:absolute;top:0;eft:5px;} /* voltar o left */
+#ferramentas #item-centro {text-align:center; }
+#ferramentas #item-centro a {margin:0 10px }
+#ferramentas #item-direita {position:absolute;top:0;right:5px;}
+#ferramentas.ferramentas-home {background:none;}
+#ultnot-paginacao {display:none;margin: 0 10px;} 
+
+#coluna-videos { }
+#coluna-videos h3 { height:auto; margin:0 0 0.1em 0;padding:0.3em 0.6em;background:#003945 url('http://ec.i.uol.com.br/col-esquerda-bg.gif') repeat 0 0;font:normal 1em arial;color:#fff;text-indent:0;text-transform:uppercase;position:relative; }
+#coluna-videos ul, #coluna-videos li { margin:0; padding:0; list-style:none; }
+#coluna-videos ul { clear:both; margin:0;padding:1em 1em 0.1em 1em;background:#D8E5E7; }
+#coluna-videos li { margin:0 0 1em 0; padding:0 0 0 1.8em; font:normal 1em arial; background:transparent url('http://img.uol.com.br/ico_assistir.gif') no-repeat 0 0.2em; }
+#coluna-videos li strong { color:#2AA1B5; }
+#coluna-videos h5 { padding:0.3em 1em; background:#D8E5E7; }
+#coluna-videos h5 a { padding-left:1.8em; font:normal 1em arial; text-transform:uppercase; background:transparent url('http://img.uol.com.br/ico_indice.gif') no-repeat 0 center; }
+#coluna-videos .bottom { display:block;margin-left:0.1em; }
+#col-direita #coluna-videos .bottom { display:none; }
+#col-direita #coluna-videos h5 { padding:0.3em 1em 0.8em 1em; background:#D8E5E7; }
+
+#shop-chamadas h3 a { color:#fff;text-transform:none; }
+
+#tag-home #corpo #player #player-insercao .sophia-home { width:22.9em;height:16em;border:0; }
+
+
+  /* Pop-up com opacidade */
+  div#FullOpacity {display:none;position:absolute;z-index:1000;top:0;left:0;width:100%;height:100%;background-color: #000;opacity:.75;filter: alpha(opacity=75); -moz-opacity: 0.45;}
+  div#FullOpacityPopUp { display:none;position:absolute;top:50%;left:50%;z-index:1001;padding:1em;background:#fff;text-align:right; }
+  div#FullOpacityPopUp img { cursor:pointer; }
+  /* Pop-up com opacidade */
+
+
+#tag-ultimasnoticias #investidor.bloco a {font-size:10px; font-weight:bold; font-family:Verdana, Arial, Helvetica, sans-serif}
+#tag-ultimasnoticias #investidor.bloco h3 { margin-bottom:0;}
+#tag-ultimasnoticias #investidor ul { margin:0.7em 1em;}
+#tag-ultimasnoticias #investidor li { background:transparent url(http://ec.i.uol.com.br/chamada-h3-bg.gif) no-repeat scroll 0 0.3em; }
+
+/* EOF */
+
+
